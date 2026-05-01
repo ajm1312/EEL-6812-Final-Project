@@ -104,7 +104,7 @@ The demo was built on a Docker environment. It is recommended to install [Docker
 cd demo
 docker build -t uap-defense .
 ```
-The Docker container will begin building and once the container is finished building, it should appear in the Docker Desktop app that it is running.
+The Docker container will begin building and once the container is finished building, it should appear in the Docker Desktop app with a 'Running' tag.
 
 ### 3. Launching the demo
 To run the demo locally, the Docker container must be ran with:
