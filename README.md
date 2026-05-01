@@ -14,8 +14,8 @@ conda activate trapdoor
 ### 1. Clone the main repository:
 ```bash
 mkdir EEL-6812-Final-Project
-git clone https://github.com/ajm1312/<FINISH LATER>
-cd <FINISH LATER>
+git clone https://github.com/ajm1312/EEL-6812-Final-Project.git
+cd EEL-6812-Final-Project
 ```
 
 ### 2. Install project dependencies:
