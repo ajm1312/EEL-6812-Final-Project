@@ -21,13 +21,13 @@ cd EEL-6812-Final-Project
 ### 2. Install project dependencies:
 
 ``` bash
-pip3 install -e .
+pip3 install -r requirements.txt
 ```
 
 ### 3. Install the trapdoor repository
 this repository relies on the [Honeypot repository](https://github.com/Shawn-Shan/trapdoor/tree/master). To clone this:
 ```bash
-git clone https://github.com/Shawn-Shan/trapdoor/tree/master
+git clone https://github.com/Shawn-Shan/trapdoor.git
 ```
 
 # Data and Attack Generation
