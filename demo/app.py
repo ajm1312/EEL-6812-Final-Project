@@ -46,11 +46,6 @@ def compute_dct_features(image_tensor, keep_coeffs=8):
 def predict(image, ground_truth):
     sys.stdout.flush()
 
-    if image is None:
-        # Now returns 6 items to match the new outputs
-        return "Error", "No image provided", "Error", {}, "Error", {}
-
-    # Preprocessing
     img_resized = cv2.resize(image, (32, 32))
     
     if img_resized.shape[-1] == 4:
@@ -74,7 +69,7 @@ def predict(image, ground_truth):
             undefended_text = f"Model Guessed: {unprocessed_label}"
 
         # Clean Image Processing
-        if svm_pred == 0: # CLEAN
+        if svm_pred == 0:
             svm_status = "SVM Classified as Clean Image"
             route_status = "Image sent to Standard Honeypot Classifier"
             
