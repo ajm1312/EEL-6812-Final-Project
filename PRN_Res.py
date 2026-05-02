@@ -2,6 +2,7 @@ from keras.layers import Input, Conv2D, Activation, Add, Lambda
 import keras.backend as K
 from keras.models import Model
 
+# Residual Block PRN Architecture.
 def PRN_Res(input_shape=(32, 32, 3)):
     inputs = Input(shape=input_shape)
     

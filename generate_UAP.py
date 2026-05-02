@@ -263,8 +263,8 @@ synthetic_uaps = generate_synthetic_uaps(
 # Step 4: Combine
 all_uaps = real_uaps + synthetic_uaps
 
-# np.save('multi_universal_perturbations.npy', all_uaps)
-all_uaps_loaded = np.load('multi_universal_perturbations.npy', allow_pickle=True)
+np.save('./attacks/new_multi_universal_perturbations.npy', all_uaps)
+all_uaps_loaded = np.load('./attacks/multi_universal_perturbations.npy', allow_pickle=True)
 
 # Randomly pick one UAP
 # for i in range(5):
