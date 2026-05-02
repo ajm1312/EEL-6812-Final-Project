@@ -3,7 +3,7 @@
 This is a repository for the code for Group 3 in EEL-6812. 
 
 # Quickstart
-This code was developed and testing on Python 3.6.8. Conda is highly recommended for this code. The Conda documentation can be found [here](https://docs.conda.io/en/latest/). Once Conda is installed and running, a new environment can be made by running the following commands in your terminal:
+This code was developed and tested on Python 3.6.8. Using a virtual environment is highly recommended. Conda was used in the development of this project. The Conda documentation and download can be found [here](https://docs.conda.io/en/latest/). Once Conda is installed and running, a new environment can be made by running the following commands in your terminal:
 
 ```bash
 conda create --name trapdoor python=3.6.8
@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 ```
 
 ### 3. Install the trapdoor repository
-this repository relies on the [Honeypot repository](https://github.com/Shawn-Shan/trapdoor/tree/master). To clone this:
+this repository relies on the [Honeypot repository](https://github.com/Shawn-Shan/trapdoor/tree/master). To clone the repository:
 ```bash
 git clone https://github.com/Shawn-Shan/trapdoor.git
 ```
@@ -35,13 +35,13 @@ git clone https://github.com/Shawn-Shan/trapdoor.git
 
 Before training the models, the Universal Adversarial Attacks and the CIFAR-10 mixed datasets must be generated.
 
-**Generate the Universal Adversarial Attack**
+**1. Generate the Universal Adversarial Attack**
 ```bash
 python3 generate_UAP.py
 ```
 This will create an `attacks/` folder containing `multi_universal_perturbations.npy` with the attacks.
 
-**Generate the Data**
+**2. Generate the Data**
 
 ```bash
 python3 generate_data.py
@@ -95,10 +95,10 @@ The online version of this demo can be found [here](https://huggingface.co/space
 ## Offline
 The code for the demo can also be found in the `demo` folder. To launch the demo:
 
-### 1. Installing Docker
+### 1. Install Docker
 The demo was built on a Docker environment. It is recommended to install [Docker Desktop](https://www.docker.com/).
 
-### 2. Building the environment
+### 2. Build the environment
 
 ```bash
 cd demo
@@ -106,7 +106,7 @@ docker build -t uap-defense .
 ```
 The Docker container will begin building and once the container is finished building, it should appear in the Docker Desktop app with a 'Running' tag.
 
-### 3. Launching the demo
+### 3. Launch the demo
 To run the demo locally, the Docker container must be ran with:
 
 ```bash
